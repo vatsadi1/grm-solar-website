@@ -1,0 +1,79 @@
+.oem-section {
+  padding: 90px 20px;
+  background: linear-gradient(180deg, #f8fafc, #ffffff);
+}
+
+.oem-container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.oem-title {
+  font-size: 30px;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 12px;
+}
+
+.oem-title span {
+  color: #16a34a;
+  font-weight: 700;
+}
+
+.oem-subtitle {
+  font-size: 15px;
+  color: #475569;
+  max-width: 700px;
+  margin: 0 auto 50px;
+  line-height: 1.7;
+}
+
+.oem-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+}
+
+.oem-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 28px 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  transition: all 0.35s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.oem-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 50px rgba(22, 163, 74, 0.25);
+}
+
+.oem-card img {
+  max-width: 130px;
+  max-height: 80px;
+  object-fit: contain;
+  margin-bottom: 14px;
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+}
+
+.oem-card:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+.oem-card span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #334155;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .oem-title {
+    font-size: 24px;
+  }
+}

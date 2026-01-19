@@ -1,0 +1,90 @@
+/* ===========================
+   SCROLL DOWN INDICATOR
+=========================== */
+.scroll-down {
+  width: 34px;
+  height: 56px;
+  position: absolute;
+  left: 50%;
+    bottom: 1%;
+  transform: translateX(-50%);
+  border-radius: 50px;
+
+  /* Solar green border */
+  border: 2px solid rgba(22, 163, 74, 0.9);
+
+  /* Subtle glow */
+  box-shadow:
+    0 0 12px rgba(22, 163, 74, 0.35),
+    inset 0 0 6px rgba(22, 163, 74, 0.25);
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover (desktop polish) */
+.scroll-down:hover {
+  box-shadow:
+    0 0 18px rgba(22, 163, 74, 0.6),
+    inset 0 0 8px rgba(22, 163, 74, 0.35);
+}
+
+/* ===========================
+   ARROW CHEVRONS
+=========================== */
+.scroll-down::before,
+.scroll-down::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #16a34a;
+  border-top: transparent;
+  border-left: transparent;
+  transform: translateX(-50%) rotate(45deg);
+  animation: scrollChevron 2s ease-in-out infinite;
+  opacity: 0;
+}
+
+/* First arrow */
+.scroll-down::before {
+  top: 22%;
+  animation-delay: 0s;
+}
+
+/* Second arrow */
+.scroll-down::after {
+  top: 38%;
+  animation-delay: 0.4s;
+}
+
+/* ===========================
+   ANIMATION
+=========================== */
+@keyframes scrollChevron {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-6px) rotate(45deg);
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(10px) rotate(45deg);
+  }
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+/* ================= MOBILE HIDE ================= */
+@media (max-width: 768px) {
+  .scroll-down {
+    display: none;
+  }
+}

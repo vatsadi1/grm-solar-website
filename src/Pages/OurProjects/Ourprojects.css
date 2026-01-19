@@ -1,0 +1,57 @@
+.visionary-projects {
+  padding: 40px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.visionary-projects .title {
+  color: #1a202c;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.main-image img {
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card .capacity {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #f58220;
+  margin-bottom: 5px;
+}
+
+.project-card .type {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.project-card .location {
+  font-size: 0.9rem;
+  color: #555;
+}

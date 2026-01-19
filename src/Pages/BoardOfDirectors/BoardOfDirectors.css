@@ -1,0 +1,244 @@
+ .cmd-section {
+  width: 100%;
+  padding: 100px 0;
+  background: linear-gradient(135deg, #f4f7f5, #ffffff);
+}
+
+.cmd-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 24px;
+  display: flex;
+  gap: 80px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* IMAGE AREA */
+.cmd-images {
+  position: relative;
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
+}
+
+.cmd-main-img {
+  width: 320px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.cmd-side-img {
+  position: absolute;
+  bottom: -30px;
+  right: -30px;
+  width: 220px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 18px;
+  border: 4px solid #fff;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* CONTENT AREA */
+.cmd-content {
+  font-family: "Inter", "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #475569;
+  flex: 1;
+  min-width: 320px;
+  background: #ffffff;
+  padding: 48px;
+  border-radius: 28px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.cmd-badge {
+  display: inline-block;
+  padding: 6px 16px;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  background: #dcfce7;
+  color: #15803d;
+  border-radius: 50px;
+  font-weight: 600;
+}
+
+.cmd-content h2 {
+  margin-top: 16px;
+  font-size: 36px;
+  line-height: 1.3;
+  color: #0f172a;
+  font-family: "Poppins", "Roboto", sans-serif;
+  font-size: 34px;
+  line-height: 1.3;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.cmd-content h2 span {
+  color: #16a34a;
+}
+
+.cmd-content h4 {
+  margin-top: 16px;
+   font-size: 18px;
+  font-weight: 600;
+  color: #0f172a;
+  margin-top: 16px;
+}
+
+.cmd-role {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 16px;
+}
+
+.cmd-content p {
+  margin-top: 12px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #475569;
+}
+
+/* BUTTONS */
+.cmd-buttons {
+  margin-top: 32px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.primary-btn {
+  padding: 12px 28px;
+  background: #16a34a;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.primary-btn:hover {
+  background: #15803d;
+}
+
+.outline-btn {
+  padding: 12px 28px;
+  background: transparent;
+  border: 1px solid #cbd5f5;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.outline-btn:hover {
+  border-color: #16a34a;
+  color: #16a34a;
+}
+
+/* SIMPLE FADE-UP ANIMATION */
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* ===========================
+   CMD MAIN CARD
+=========================== */
+.cmd-content {
+  background: #ffffff;
+  padding: 50px 48px;
+  border-radius: 22px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+}
+
+/* SAME PRESENCE-CARD HOVER FEEL */
+.cmd-content:hover {
+  transform: scale(1.015);
+  box-shadow:
+    20px 20px 40px rgba(0, 0, 0, 0.12),
+   -20px -20px 40px rgba(207, 244, 212, 0.9);
+}
+
+/* ===========================
+   IMAGE CARD EFFECT
+=========================== */
+.cmd-main-img {
+  width: 320px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 22px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  transition: all 0.4s ease;
+}
+
+.cmd-images:hover .cmd-main-img {
+  transform: scale(1.03);
+  box-shadow:
+    0 30px 55px rgba(22, 163, 74, 0.35);
+}
+
+/* ===========================
+   BADGE HOVER (SUBTLE)
+=========================== */
+.cmd-badge {
+  display: inline-block;
+  padding: 6px 16px;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  background: #dcfce7;
+  color: #15803d;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.cmd-content:hover .cmd-badge {
+  background: #16a34a;
+  color: #ffffff;
+}
+
+/* ===========================
+   TEXT MICRO INTERACTION
+=========================== */
+.cmd-content p {
+  transition: color 0.3s ease;
+}
+
+.cmd-content:hover p {
+  color: #334155;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .cmd-container {
+    flex-direction: column;
+  }
+
+  .cmd-side-img {
+    right: 0;
+  }
+
+  .cmd-content {
+    padding: 32px;
+  }
+}

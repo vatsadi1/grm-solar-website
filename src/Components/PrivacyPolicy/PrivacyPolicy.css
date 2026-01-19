@@ -1,0 +1,94 @@
+.policy-wrap {
+  padding: 120px 20px 80px;
+  background: #f4f6f3;
+  font-family: "Outfit", sans-serif;
+}
+
+.policy-container {
+  max-width: 900px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12px);
+  border-radius: 22px;
+  padding: 50px 42px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+.policy-container h1 {
+  font-size: 2.6rem;
+  margin-bottom: 10px;
+  color: #0f172a;
+}
+
+.policy-updated {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 30px;
+}
+
+.policy-container h2 {
+  font-size: 1.4rem;
+  margin-top: 34px;
+  margin-bottom: 12px;
+  color: #0f172a;
+}
+
+.policy-container p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #334155;
+  margin-bottom: 14px;
+}
+
+.policy-container ul {
+  padding-left: 20px;
+  margin: 10px 0 20px;
+}
+
+.policy-container li {
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: #334155;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .policy-wrap {
+    padding: 100px 16px 60px;
+  }
+
+  .policy-container {
+    padding: 36px 26px;
+  }
+
+  .policy-container h1 {
+    font-size: 2rem;
+  }
+
+  .policy-container h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .policy-container {
+    padding: 28px 20px;
+  }
+
+  .policy-container h1 {
+    font-size: 1.7rem;
+  }
+}
+
+/* ===== MOBILE NAVBAR SPACING FIX ===== */
+@media (max-width: 768px) {
+  .policy-wrap {
+    padding-top: 140px !important;  /* 👈 navbar gap */
+  }
+}
+
+@media (max-width: 480px) {
+  .policy-wrap {
+    padding-top: 130px !important;
+  }
+}

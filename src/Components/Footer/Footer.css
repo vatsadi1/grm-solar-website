@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600&display=swap");
+
+.neo-footer {
+  
+  padding: 80px 20px 30px;
+  font-family: "Inter", sans-serif;
+  color: #cbd5f5;
+}
+
+/* GRID */
+.neo-footer-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+}
+
+/* CARD */
+.neo-footer-card {
+  background: #0b132b;
+  padding: 32px 28px;
+  border-radius: 22px;
+
+  box-shadow:
+    10px 10px 28px rgba(14, 14, 14, 0.45),
+   -10px -10px 28px rgba(255, 255, 255, 0.03);
+
+  transition: all 0.35s ease;
+}
+
+.neo-footer-card:hover {
+  box-shadow:
+    inset 8px 8px 18px rgba(0, 0, 0, 0.55),
+    inset -8px -8px 18px rgba(255, 255, 255, 0.05);
+}
+
+/* TITLES */
+.neo-footer-card h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 18px;
+}
+
+/* TEXT */
+.neo-footer-card p,
+.neo-footer-card li {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #cbd5f5;
+}
+
+/* LINKS */
+.neo-footer-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.neo-footer-card ul li {
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: color 0.25s ease;
+}
+
+.neo-footer-card ul li:hover {
+  color: #22c55e;
+}
+
+/* SOCIAL ICONS */
+.neo-socials {
+  display: flex;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.neo-socials i {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #0b132b;
+  color: #22c55e;
+
+  box-shadow:
+    6px 6px 14px rgba(0,0,0,0.4),
+   -6px -6px 14px rgba(255,255,255,0.04);
+
+  transition: transform 0.3s ease;
+}
+
+.neo-socials i:hover {
+  transform: translateY(-3px);
+}
+
+/* PHONE */
+.neo-phone {
+  margin-top: 10px;
+  font-weight: 500;
+  color: #22c55e;
+}
+
+/* BOTTOM */
+.neo-footer-bottom {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 13px;
+  color: #94a3b8;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding-top: 20px;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .neo-footer {
+    padding: 60px 16px 25px;
+  }
+}
+/* ================= FOOTER SOCIAL ICON FIX ================= */
+
+.neo-socials {
+  display: flex;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+/* Normalize font-awesome icons */
+.neo-socials i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 38px;
+  height: 38px;
+
+  font-size: 16px;
+  line-height: 1;
+
+  border-radius: 50%;
+  cursor: pointer;
+
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+
+  transition: all 0.25s ease;
+}
+
+/* Hover effect (professional) */
+.neo-socials i:hover {
+  background: #22c55e; /* solar green */
+  color: #022c22;
+  transform: translateY(-2px);
+}
+.neo-socials a svg {
+  transition: transform 0.25s ease;
+}
+
+.neo-socials a:hover svg {
+  transform: scale(1.05);
+}
+/* ================= SOCIAL ICON HOVER UPSCALE ================= */
+
+.neo-socials a {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+/* Hover effect */
+.neo-socials a:hover {
+  transform: scale(1.15); /* upscale */
+  background: #22c55e; /* solar green */
+  color: #022c22;
+
+  box-shadow: 0 8px 20px rgba(34, 197, 94, 0.35);
+}
+
+/* Optional: active click feel */
+.neo-socials a:active {
+  transform: scale(1.05);
+}
