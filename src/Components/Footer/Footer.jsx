@@ -47,6 +47,7 @@ const Footer = () => {
             <br />
             Bettiah, West Champaran - 845453
           </p>
+          <p className="neo-phone">📞 +91 9122392555</p>
           <p className="neo-phone"> 📞 +91 9122394789</p>
           <p className="neo-phone">📞 +91 9122393789</p>
 
