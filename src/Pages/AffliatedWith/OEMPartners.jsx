@@ -8,7 +8,7 @@ import Waaree from "/src/assets/Waaree Energies IPO_ Illuminating the Path to a 
 import utl from "/src/assets/utl-solar-logo-png_seeklogo-623475.png";
 import mahindra from "/src/assets/Mahindra Logo - Mahindra Emblem - Mahindra Symbol.jpeg";
 import rayzon from "/src/assets/rayzon-solar-logo-teal.png";
-import vikram from "/src/assets/download (11).jpeg"
+
 
 
 const oemPartners = [
@@ -20,7 +20,7 @@ const oemPartners = [
   { img: utl, name: "UTL Solar" },
   { img: mahindra, name: "Mahindra Susten" },
   { img: rayzon, name: "Rayzon Solar" },
-    { img: vikram, name: "Vikram Solar" },
+  
 ];
 
 const OEMPartners = () => {
