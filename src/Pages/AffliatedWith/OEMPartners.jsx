@@ -4,11 +4,10 @@ import adani from "/src/assets/ENT.jpeg";
 import waaree from "/src/assets/Waaree Energies IPO_ Illuminating the Path to a Sustainable Future.jpeg";
 import tata from "/src/assets/TATA POWER.jpeg";
 import suzlon from "/src/assets/SUZLON.jpeg";
-import Waaree from "/src/assets/Waaree Energies IPO_ Illuminating the Path to a Sustainable Future.jpeg";
 import utl from "/src/assets/utl-solar-logo-png_seeklogo-623475.png";
 import mahindra from "/src/assets/Mahindra Logo - Mahindra Emblem - Mahindra Symbol.jpeg";
 import rayzon from "/src/assets/rayzon-solar-logo-teal.png";
-
+import vikram from "/src/assets/download (11).jpeg"
 
 
 const oemPartners = [
@@ -16,11 +15,10 @@ const oemPartners = [
   { img: waaree, name: "Waaree Energies" },
   { img: tata, name: "TATA Group" },
   { img: suzlon, name: "Suzlon Energy" },
-  { img: Waaree, name: "Vikram Solar" },
   { img: utl, name: "UTL Solar" },
   { img: mahindra, name: "Mahindra Susten" },
   { img: rayzon, name: "Rayzon Solar" },
-  
+    { img: vikram, name: "Vikram Solar" },
 ];
 
 const OEMPartners = () => {
