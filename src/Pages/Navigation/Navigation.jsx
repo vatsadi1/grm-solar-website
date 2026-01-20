@@ -57,13 +57,16 @@ const Navbar = ({ floating }) => {
   return (
     <>
       <nav className={`navbar ${floating ? "floating" : ""}`}>
+        <Link to="/">
+
         <div className="logo">
+          
           <img
             src="/GrmLogo/WhatsApp_Image_2026-01-16_at_11.00.47_PM-removebg-preview.png"
             alt="Logo"
           />
         </div>
-
+</Link>
         <ul className="nav-links">
           <li>
             <Link to="/">Home</Link>
