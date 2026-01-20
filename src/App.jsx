@@ -12,6 +12,7 @@ import AboutPage from './components/AboutUs/AboutUs'
 import ScrollToTop from './ScrollToTop/ScrollToTop'
 import PrivacyPolicy from './Components/PrivacyPolicy/PrivacyPolicy'
 import TermsConditions from './Components/TermsConditions/TermsConditions'
+import FloatingWhatsApp from './Components/FloatingWhatsApp/FloatingWhatsApp'
 
  
  function App() {
@@ -37,6 +38,7 @@ import TermsConditions from './Components/TermsConditions/TermsConditions'
           <Route path="/contact" element={<Contact/>}/>
            
      </Routes>
+     <FloatingWhatsApp/>
      </div>
    )
  }

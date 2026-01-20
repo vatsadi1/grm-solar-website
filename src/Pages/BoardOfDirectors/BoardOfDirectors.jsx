@@ -24,14 +24,16 @@ const CMDSection = () => {
         {/* LEFT IMAGE AREA */}
         <div className="cmd-images fade-up">
           <img
-            src="/CmdImg/WhatsApp Image 2026-01-11 at 10.53.59 PM.jpeg"
+            src="/CmdImg/ChatGPT Image Jan 20, 2026, 04_50_21 PM.png"
             alt="CMD Portrait"
             className="cmd-main-img"
           />
         </div>
 
         {/* RIGHT CONTENT AREA */}
-        <div className="cmd-content fade-up">
+        <div className="cmd-content-wrap fade-up">
+  <div className="cmd-content">
+          
           <span className="cmd-badge">From the CMD's Desk</span>
 
           <h2>
@@ -50,14 +52,8 @@ const CMDSection = () => {
             into both system design and large-scale project execution.
           </p>
 
-          <p>
-            As Chairperson and CMD, Ms. Kumari is deeply engaged in policy
-            implementation, governance, and strategic planning, guiding the
-            organization in alignment with national renewable energy objectives.
-            Her vision emphasizes scalable, efficient, and sustainable solar
-            infrastructure, contributing significantly to India’s energy
-            security and environmental sustainability initiatives.
-          </p>
+          
+        </div>
         </div>
       </div>
     </section>
